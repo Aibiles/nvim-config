@@ -1,0 +1,19 @@
+# Neovim 配置 .gitignore
+
+# 系统/编辑器临时文件
+*.swp
+*.swo
+*.swn
+*~
+.DS_Store
+Thumbs.db
+
+# Neovim 运行时生成文件（通常位于 ~/.local，不在本仓库，但以防误提交）
+spell/
+undo/
+swap/
+shada/
+
+# 插件相关（本地缓存/编译产物，通常不在本仓库）
+lua/**/*.so
+parser/
