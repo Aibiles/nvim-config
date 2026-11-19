@@ -5,6 +5,7 @@ local options = {
     cpp = { "clang-format" },
     -- go = { "gofumpt", "goimports-reviser", "golines" },
     python = { "ruff_format", "ruff_fix" },
+    sql = { "sql_formatter" },
     css = { "prettier" },
     html = { "prettier" },
   },

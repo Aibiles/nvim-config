@@ -24,6 +24,7 @@ lspconfig.servers = {
     -- "hls",
     -- "ols",
     "basedpyright",
+    "sqls",
 }
 
 -- list of servers configured with default config.
@@ -129,4 +130,11 @@ vim.lsp.config("lua_ls", { -- nvim 0.11
             },
         },
     },
+})
+
+-- lspconfig.sqls.setup({ -- pre nvim 0.11
+vim.lsp.config("sqls", { -- nvim 0.11
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
 })
